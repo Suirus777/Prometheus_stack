@@ -7,7 +7,7 @@
 * Node Exporter;<br>
 * Blackbox Exporter;<br>
 * AlertManager.<br><br>
-<p> Ответ: был развёрнут полный Prometheus Stack через docker-compose: <br>
+<b> Ответ: был развёрнут полный Prometheus Stack через docker-compose: <br>
 <br>
 root@grafana:/home/user/grafana# docker ps <br>
 CONTAINER ID        IMAGE                       COMMAND                  CREATED             STATUS              PORTS                      NAMES <br>
@@ -16,12 +16,12 @@ CONTAINER ID        IMAGE                       COMMAND                  CREATED
 47095dad3733        prom/node-exporter          "/bin/node_exporter …"   19 hours ago        Up 8 hours          0.0.0.0:9100->9100/tcp     grafana_node-exporter_1 <br> 
 3cdbed1b9cd4        grafana/grafana             "/run.sh"                19 hours ago        Up 8 hours          0.0.0.0:3000->3000/tcp     grafana_grafana_1 <br>
 f86812f2adf7        prom/prometheus:latest      "/bin/prometheus --c…"   21 hours ago        Up 2 seconds        0.0.0.0:9090->9090/tcp     grafana_prometheus_1 <br>
-</p><br>
+</b><br>
 
 2. Соберите метрики с https://lms.skillfactory.ru через Blackbox, соберите метрики с вашего сервера через Node Exporter.<br>
 <br>
-<p> Ответ: Было сделано, собраны метрики с https://lms.skillfactory.ru через Blackbox
-</p><br><br>
+<b> Ответ: Было сделано, собраны метрики с https://lms.skillfactory.ru через Blackbox
+</b><br><br>
 
 3. Создайте dashboard в Grafana, в котором будут отображены следующие метрики:<br>
 <br>
@@ -44,18 +44,18 @@ f86812f2adf7        prom/prometheus:latest      "/bin/prometheus --c…"   21 ho
 <br>
 * изменился статус-код сайта lms.skillfactory.ru;<br>
 * задержка превышает 5 секунд lms.skillfactory.ru;<br>
-* сервер перезагрузился (через метрику Uptime).<br><br>
+* сервер перезагрузился (через метрику Uptime).<br>
 
-<p> Ответ: Было сделано, alerts можно увидеть в Github: prometheus/alert.yml <br>
+<b> Ответ: Было сделано, alerts можно увидеть в Github: prometheus/alert.yml <br>
 Также будут отправлены скриншоты
-</p><br><br>
+</b><br><br>
 
 В Телеграм алерты можно не отправлять. Если есть желание, в качестве дополнительного задания можно кидать их себе на почту.<br>
 <br>
-<p> Ответ: Была настроена отправка сообщений по почте настройки можно будет посмотреть в github: alertmanager/alertmanager.yml <br>
+<b> Ответ: Была настроена отправка сообщений по почте настройки можно будет посмотреть в github: alertmanager/alertmanager.yml <br>
 почтовые сообщения о состоянии метрик будут отправлены скриншотами
-</p><br><br>
+</b><br><br>
 
 Оформите решение в виде скриншотов дашборда, скриншотов интерфейса AlertManager и конфигов используемых сервисов.<br>
 <br>
-<p> Сделано </p><br>
+<b> Сделано </b><br>
